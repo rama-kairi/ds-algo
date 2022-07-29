@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	s := slice.Slice[int64]{}
+	s := slice.New[int64]()
 
-	s = s.New(1)
+	s = s.Append(1)
 	s = s.Append(2)
 	s = s.Append(3)
 	s = s.Append(6)
